@@ -1,2 +1,4 @@
 # Web-Development-Learnings
-A compilation of mini projects for learning web development
+Hello! 
+
+This repository contains multiple mini projects that are related to web development. More projects will be added as time goes on, so stay tuned!
