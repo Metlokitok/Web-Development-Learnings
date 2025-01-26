@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:center;
+    height: 100rem;
+    width: 90%;
+}
+
+
+/* divs flexbox no wrapping */
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.box div {
+    height: 10rem;
+    border: 2px solid black;
+    flex-basis: 15rem;
+}
+
+/* uses flex shorthand to determine container sizes */
+
+.box div:nth-of-type(1) {
+    flex: 2 1 10rem;
+}
+
+.box div:nth-of-type(2) {
+    flex: .5 1 10rem;
+}
+
+.box div:nth-of-type(3) {
+    flex: .5 1 10rem;
+}
+
+.box div:nth-of-type(4) {
+    flex: .5 1 10rem;
+}
+
+.box div:nth-of-type(5) {
+    flex: .5 1 10rem;
+}
+
+.box div:nth-of-type(6) {
+    flex: .5 1 10rem;
+}
+
+/* color */
+
+.container-1 {
+    background-color: #406682;
+}
+
+.container-2 {
+    background-color: #607e96;
+}
+
+.container-3 {
+    background-color: #7f96aa;
+}
+
+.container-4 {
+    background-color: #9eafbf;
+}
+
+.container-5 {
+    background-color: #bec9d4;
+}
+
+.container-6 {
+    background-color: #dee4e9;
+}
