@@ -15,13 +15,62 @@ body {
     align-items: center;
 }
 
+
+/* Navbar Design and Flex */
+header {
+    background-color: steelblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    flex: 2 1 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    width: 10%;
+    padding: 0.5rem;
+    font-size: 3rem;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+header nav ul li:hover {
+    background-color: #406682;
+    color: #dee4e9;
+}
+
+header nav h1 {
+    flex:0.5 1 3rem;
+    font-size: 4rem;
+    color: white;
+}
+
+header nav button {
+    flex: .2 1 5rem;
+}
+
+
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items:center;
     height: 100rem;
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -41,35 +90,10 @@ main {
     height: 10rem;
     border: 2px solid black;
     flex-basis: 15rem;
+    flex: 1 2 10rem;
 }
 
-/* uses flex shorthand to determine container sizes */
-
-.box div:nth-of-type(1) {
-    flex: 2 1 10rem;
-}
-
-.box div:nth-of-type(2) {
-    flex: .5 1 10rem;
-}
-
-.box div:nth-of-type(3) {
-    flex: .5 1 10rem;
-}
-
-.box div:nth-of-type(4) {
-    flex: .5 1 10rem;
-}
-
-.box div:nth-of-type(5) {
-    flex: .5 1 10rem;
-}
-
-.box div:nth-of-type(6) {
-    flex: .5 1 10rem;
-}
-
-/* color */
+/* Removed Individual flex shorthand */
 
 .container-1 {
     background-color: #406682;
@@ -93,4 +117,4 @@ main {
 
 .container-6 {
     background-color: #dee4e9;
-}
+} 
