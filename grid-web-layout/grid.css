@@ -11,35 +11,75 @@ html {
 body {
     min-height: 200vh;
     display: grid;
-    grid-template-columns: 80rem 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
     grid-template-areas: 
-    "header header"
-    "sidebar main"
-    "sidebar footer";
+    "header"
+    "main"
+    "sidebar"
+    "footer";
 }
 
 header {
     background-color: #abc4ff;
     grid-area: header;
-    font-size: 8rem;
+    font-size: 4rem;
 }
 
 main {
     background-color: #edf2fa;
     grid-area: main;
-    font-size: 20rem;
+    font-size: 2rem;
 }
 
 aside {
     background-color: #d7e3fc;
     grid-area: sidebar;
-    font-size: 10rem;
+    font-size: 5rem;
 }
 
 
 footer {
     background-color: #abc4ff;
     grid-area: footer;
-    font-size: 20rem;
+    font-size: 10rem;
 }
+
+
+
+@media (min-width: 768px) {
+    body {
+        min-height: 200vh;
+        display: grid;
+        grid-template-columns: 15rem 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "sidebar footer";
+    }
+
+    header {
+        font-size: 6rem;
+    }
+
+    main {
+        font-size: 5rem;
+    }
+
+    aside {
+        font-size: 5rem;
+    }
+    
+    footer {
+        font-size: 18rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        grid-template-columns: 30rem 1fr;
+    }
+
+}
+
