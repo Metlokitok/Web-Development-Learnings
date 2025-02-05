@@ -46,7 +46,7 @@ footer {
 }
 
 
-
+/* Media Queries to make it responsive */
 @media (min-width: 768px) {
     body {
         min-height: 200vh;
