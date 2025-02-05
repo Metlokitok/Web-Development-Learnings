@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 200vh;
+    display: grid;
+    grid-template-columns: 80rem 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "sidebar footer";
+}
+
+header {
+    background-color: #abc4ff;
+    grid-area: header;
+    font-size: 8rem;
+}
+
+main {
+    background-color: #edf2fa;
+    grid-area: main;
+    font-size: 20rem;
+}
+
+aside {
+    background-color: #d7e3fc;
+    grid-area: sidebar;
+    font-size: 10rem;
+}
+
+
+footer {
+    background-color: #abc4ff;
+    grid-area: footer;
+    font-size: 20rem;
+}
