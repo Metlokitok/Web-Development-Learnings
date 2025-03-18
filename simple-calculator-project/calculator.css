@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #7f96aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #406682;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Designs the Calculator Buttons and Aligns them */
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Adds hover effect for the buttons*/
+
+.calculator form input[type="button"]:hover {
+    background-color: #607e96;
+}
+
+/* Adds a color for the operators */
+
+form input.operator {
+    color: #33ffd8;
+}
+
+/* Fixed the calculator display design */
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+/* Doubles the size of Equal "=" Button */
+
+form input.equal {
+    width: 145px;
+}
