@@ -1,0 +1,130 @@
+/* Style */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5ebe0;
+
+}
+
+.login-prompt {
+    width: 60rem;
+    height: 40rem;
+    background-color: #d5bdaf;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    border-radius: 1rem;
+
+    font-size: 5rem;
+
+    h1 {
+        font-size: 8rem;
+        color: white;
+    }
+
+    button {
+        width: 15rem;
+        height: 5rem;
+        background-color: #d6ccc2;
+        border: .2rem solid black;
+        border-radius: 1rem;
+        cursor: pointer;;
+        transition: background-color 0.3s ease;
+    }
+    button:hover  {
+        background-color: white;
+    }
+}
+
+.login-prompt.hide {
+    display: none;
+}
+
+.login-form {
+    width: 60rem;
+    height: 40rem;
+    background-color: #d5bdaf;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 1rem;
+
+    font-size: 5rem;
+    h2 {
+        font-size: 6rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 50rem;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        input {
+            width: 60%;
+            height: 20%;
+        }    
+        button {
+            cursor: pointer;
+            width: 30%;
+            background-color: #d6ccc2;
+        }
+    }
+}
+
+.login-form.hide {
+    display: none;
+}
+
+.login-confirmed {
+    width: 60rem;
+    height: 40rem;
+    background-color: #d5bdaf;
+
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+
+    border-radius: 1rem;
+
+    font-size: 5rem;
+
+    p {
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.login-confirmed.hide{
+    display: none;
+}
